@@ -285,7 +285,7 @@
                                             <?php
                                                 $sql="SELECT * FROM `referral` INNER JOIN user ON referral.sender_id=user.id WHERE referral.user_id='".$_SESSION['idx']."'";
                                                 $res=mysqli_query($conn,$sql); 
-                                                $courses = ['Parent','Instructor','Instructor'];
+                                                $courses = ['Parent','Instructor','Adult'];
                                                 if($res)
                                                 {
                                                     while($row = mysqli_fetch_assoc($res))
