@@ -10,7 +10,7 @@
             $createdDate = $row['created_at'];
             $now = date("Y-m-d h:i:sa");
             $delta = strtotime($now)-strtotime($createdDate);
-            if ($delta > 48*3600) {
+            if ($delta > 24 * 3600) {
                 $sql="UPDATE referral SET STATUS='1' WHERE id='".$row['id']."'";
                 mysqli_query($conn,$sql); 
             }
