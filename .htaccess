@@ -2,7 +2,6 @@
     RewriteEngine On
 
     # Redirect Trailing Slashes If Not A Folder...
-    # Subfolder is baseurl/dashboard
-    RewriteRule ^(.*)refer/(.*) /dashboard/page-register.php?refer=$2 [L,R=301]
+    RewriteRule ^(.*)refer/(.*) /page-register.php?refer=$2 [L,R=301]
 </IfModule>
 
